@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RA1811028010077</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<style type="text/css">
+	
+	body{
+
+		background-color: lime
+
+	}
+
+		#box{
+
+	/* CENTER BOX */
+background: green;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        height:650px;
+        width:650px;
+
+
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="box" style="text-align: center;" ng-app="hi" ng-controller="myctrl" ng-init="count=0">
+	<h1>GROCERY LIST</h1>
+	<table class="center">
+		
+<tr>
+	<br>
+<th>Product Name</th>
+<th>Price</th>
+<th>Cart</th>
+<th>Total Quantity</th>
+
+</tr>
+
+<tr>
+	
+<td>Oil</td>
+<td>Rs. 100</td>
+<td><input type="submit" name="" value="Add" ng-click="count = count + 1"></td>
+<td>{{count}}</td>
+</tr>
+
+<tr>
+	
+<td>Cheese</td>
+<td>Rs. 60</td>
+<td><input type="submit" name="" value="Add" ng-click="count1 = count1 + 1"></td>
+<td>{{count1}}</td>
+</tr>
+
+<tr>
+	
+<td>Paneer</td>
+<td>Rs. 120</td>
+<td><input type="submit" name="" value="Add" ng-click="count2 = count2 + 1"></td>
+<td>{{count2}}</td>
+</tr>
+
+<tr>
+	
+<td>Biscuit</td>
+<td>Rs. 10</td>
+<td><input type="submit" name="" value="Add" ng-click="count3 = count3 + 1"></td>
+<td>{{count3}}</td>
+</tr>
+
+<tr>
+	
+<td>Bournvita</td>
+<td>Rs. 300</td>
+<td><input type="submit" name="" value="Add" ng-click="count4 = count4 + 1"></td>
+<td>{{count4}}</td>
+</tr>
+
+<tr>
+	
+<td>Tea</td>
+<td>Rs. 50</td>
+<td><input type="submit" name="" value="Add" ng-click="count5 = count5 + 1"></td>
+<td>{{count5}}</td>
+</tr>
+
+<tr>
+	
+<td>Oil</td>
+<td>Rs. 100</td>
+<td><input type="submit" name="" value="Add" ng-click="count7 = count7 + 1"></td>
+<td>{{count7}}</td>
+</tr>
+
+<tr>
+	
+<td>Bread</td>
+<td>Rs. 20</td>
+<td><input type="submit" name="" value="Add" ng-click="count9 = count9 + 1"></td>
+<td>{{count9}}</td>
+</tr>
+
+<td>Wheat</td>
+<td>Rs. 150</td>
+<td><input type="submit" name="" value="Add" ng-click="count8 = count8 + 1"></td>
+<td>{{count8}}</td>
+</tr>
+
+<td>Rice</td>
+<td>Rs. 200</td>
+<td><input type="submit" name="" value="Add" ng-click="count6 = count6 + 1"></td>
+<td>{{count6}}</td>
+</tr>
+
+<tr>
+	
+
+
+
+	</table>
+<br><br>
+	<a href="page2.html" style="text-align: center;color: white">Next Page</a>
+
+</div>
+<script>
+var app = angular.module('hi', []);
+app.controller('myctrl', function($scope) {
+    $scope.count = 0;$scope.count1 = 0;$scope.count2 = 0;$scope.count3 = 0;$scope.count4 = 0;$scope.count5 = 0;$scope.count6 = 0;$scope.count7 = 0;$scope.count8 = 0;$scope.count9 = 0;
+
+});
+</script>
+
+</body>
+</html>
